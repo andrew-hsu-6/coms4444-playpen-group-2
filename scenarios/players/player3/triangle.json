@@ -1,0 +1,9 @@
+{
+  "room": [[0, 0], [30, 0], [0, 30]],
+  "inventory": {
+    "walls": {"10": 3},
+    "gates": {"10": 1},
+    "connectors": {"straight": 0, "right": 4, "diagonal": 0}
+  },
+  "weights": {"A": 1.0, "C": -1.0, "G": 0.0}
+}

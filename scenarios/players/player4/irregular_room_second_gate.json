@@ -1,0 +1,37 @@
+{
+  "_description": "Six-sided irregular (non-convex) room. Inventory includes two gate lengths and extra right/diagonal connectors for non-rectangular layouts. Weights strongly reward a second gate on a different face (high G) while penalizing perimeter (large |C|).",
+  "room": [
+    [0, 0],
+    [38, 0],
+    [44, 14],
+    [30, 34],
+    [6, 30],
+    [0, 14]
+  ],
+  "inventory": {
+    "walls": {
+      "5": 3,
+      "6": 2,
+      "7": 2,
+      "9": 3,
+      "11": 2,
+      "13": 1,
+      "15": 1
+    },
+    "gates": {
+      "6": 1,
+      "9": 1,
+      "12": 1
+    },
+    "connectors": {
+      "straight": 10,
+      "right": 14,
+      "diagonal": 10
+    }
+  },
+  "weights": {
+    "A": 1.5,
+    "C": -4.5,
+    "G": 200.0
+  }
+}

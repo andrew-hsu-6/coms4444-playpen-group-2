@@ -1,0 +1,10 @@
+{
+  "_description": "The Lollipop Trap. The room is a big octagon (the candy) joined by a thin neck (the stick) to a small square anteroom, so it looks like a lollipop. The weights are area-greedy (A=4.0, C only -1.0), so the obvious play is to enclose the big octagon. The trap isn't the shape or the weights, it's the connector bin: tracing the octagon needs eight diagonal (135-degree) connectors, one per corner, but only 2 are in stock. Walls are plentiful, so the shortage is provably the diagonal connectors, not the pieces. A greedy area-maximizer that tries the octagon gets 'not enough diagonal connectors' and, if it submits anyway, scores -1000. The intended solution ignores the bait and boxes the little anteroom with four right-angle connectors (e.g. gate 8 + walls 10,8,10 -> valid, ~1284). The example player (--player e) does exactly this and scores ~1344. Lesson: scarcity isn't about how many pieces you have, it's about which single resource the geometry forces you to spend.",
+  "room": [[22, 0], [38, 0], [50, 12], [50, 28], [38, 40], [35, 40], [35, 54], [25, 54], [25, 40], [22, 40], [10, 28], [10, 12]],
+  "inventory": {
+    "walls": {"5": 8, "6": 6, "8": 8, "10": 6, "12": 4},
+    "gates": {"6": 2, "8": 2},
+    "connectors": {"right": 12, "straight": 10, "diagonal": 2}
+  },
+  "weights": {"A": 4.0, "C": -1.0, "G": 60.0}
+}

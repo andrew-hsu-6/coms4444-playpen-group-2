@@ -1,0 +1,49 @@
+{
+  "_description": "A large spiral-shaped room with multiple deep concavities and narrow sections, creating a large overall bounding box but relatively few simple regions where a large enclosure can fit. Unlike a rectangular or convex room, an enclosure that fits within the room's overall width and height may still cross outside the polygon at one of the spiral's inward turns. The inventory contains many short wall pieces and 18 right-angle connectors, giving players enough flexibility to construct smaller or more complex enclosures, while only 2 diagonal connectors limit strategies that rely heavily on 135-degree turns. This scenario tests whether players can search effectively for valid placements in highly non-convex geometry rather than assuming that a large room bounding box implies that large enclosures will fit.",
+  "room": [
+    [0, 0],
+    [40, 0],
+    [40, 36],
+    [0, 36],
+    [0, 8],
+    [32, 8],
+    [32, 28],
+    [8, 28],
+    [8, 16],
+    [24, 16],
+    [24, 20],
+    [16, 20],
+    [16, 24],
+    [28, 24],
+    [28, 12],
+    [4, 12],
+    [4, 32],
+    [36, 32],
+    [36, 4],
+    [0, 4]
+  ],
+  "inventory": {
+    "walls": {
+      "5": 5,
+      "6": 5,
+      "7": 4,
+      "8": 3,
+      "10": 2,
+      "12": 1
+    },
+    "gates": {
+      "5": 1,
+      "7": 1
+    },
+    "connectors": {
+      "straight": 16,
+      "right": 18,
+      "diagonal": 2
+    }
+  },
+  "weights": {
+    "A": 2.0,
+    "C": -3.0,
+    "G": 100.0
+  }
+}

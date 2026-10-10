@@ -1,0 +1,35 @@
+{
+  "_description": "Large rectangular room with a generous, slightly unbalanced inventory. Good first sanity check: plenty of wall lengths and connectors to build a big axis-aligned rectangle with one or two gates.",
+  "room": [
+    [0, 0],
+    [48, 0],
+    [48, 36],
+    [0, 36]
+  ],
+  "inventory": {
+    "walls": {
+      "5": 4,
+      "6": 3,
+      "8": 5,
+      "10": 4,
+      "12": 3,
+      "14": 2,
+      "15": 2
+    },
+    "gates": {
+      "6": 2,
+      "8": 2,
+      "10": 1
+    },
+    "connectors": {
+      "straight": 14,
+      "right": 12,
+      "diagonal": 6
+    }
+  },
+  "weights": {
+    "A": 2.0,
+    "C": -3.0,
+    "G": 100.0
+  }
+}
